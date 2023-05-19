@@ -10,7 +10,7 @@
 
 Let's use "on chat command" event blocks to run different commands.
 
-![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/1-saveTheArcade/images/placeholder.gif)
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
 
 ### Adding blocks to the workspace
 
