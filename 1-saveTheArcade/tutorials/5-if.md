@@ -10,7 +10,7 @@
 
 Let's use an if block so the agent can decide whether to perform a section of code.
 
-![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/1-saveTheArcade/images/placeholder.gif)
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
 
 ### Making choices
 
