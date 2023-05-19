@@ -10,7 +10,7 @@
 
 Let's use a repeat loop to run a section of code multiple times.
 
-![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/1-saveTheArcade/images/placeholder.gif)
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
 
 ### Writing less code
 

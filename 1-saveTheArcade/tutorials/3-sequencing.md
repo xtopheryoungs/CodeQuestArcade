@@ -10,7 +10,7 @@
 
 Let's put multiple blocks in a single chat command to complete a task that requires multiple steps.
 
-![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/1-saveTheArcade/images/placeholder.gif)
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
 
 ### Commands with multiple steps
 
