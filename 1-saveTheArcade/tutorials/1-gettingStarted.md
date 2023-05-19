@@ -18,7 +18,7 @@ In the ``||player:player say||`` **statement block**, change the text to what yo
 
 Press the Play button to make the ``||loops:on start||`` **event block** run your code.
 
-Press the light bulb icon below to display an extra hint.
+Press the light bulb icon to display an extra hint.
 
 #### ~ tutorialhint
 
