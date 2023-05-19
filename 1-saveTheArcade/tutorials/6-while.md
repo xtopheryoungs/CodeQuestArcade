@@ -10,7 +10,7 @@
 
 Let's use a while loop so the agent can decide whether to keep performing a section of code.
 
-![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/1-saveTheArcade/images/placeholder.gif)
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
 
 ### Looping based on a choice
 
