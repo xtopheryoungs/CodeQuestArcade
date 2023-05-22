@@ -56,6 +56,8 @@ Be sure to get an accurate count so that the repeat loop runs the correct number
 
 Repeat blocks are useful for reducing the amount of code to write.
 
+Recognizing patterns helps identify when a repeat block can be used.
+
 ```template
 player.onChat("repeat", function () {
     for (let index = 0; index < 4; index++) {
