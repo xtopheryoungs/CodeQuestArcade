@@ -8,36 +8,79 @@
 
 ### @showdialog
 
-Let's use an if block so the agent can decide whether to perform a section of code.
+An if block can determine whether to run a certain section of code
 
 ![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
 
 ### Making choices
 
-Run the "cleanup" chat command to make the agent get rid of only the blocks.
+An ``||logic:if||`` block is another type of **compound statement block** that uses a **condition** to make a decision.  If the condition is true, then the ``||logic:if||`` block runs the code inside it.
 
-Add to the "run" chat command to get rid of each slime block without breaking any of the torches.
-
-Use the ``||agent:agent detect||`` **condition block** to check ``||logic:if||`` there is a solid Minecraft block next to the agent.  The ideal solution will also work for clearing the honey blocks without breaking any levers.
+Run the **"if"** chat command to see if the agent can detect a block and destroy it.
 
 #### ~ tutorialhint
 
-The ``||agent:agent detect||`` block lets the agent know whether there is a solid block.  Smaller items such as torches, levers, and buttons do not get detected since the agent can move through them.
+The ``||agent:agent detect||`` block is a *condition block* because it tells if something is true or false.
+
+### @showdialog
+
+Let's use an if block with a repeat loop to make a series of decisions
+
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
+
+### Making choices
+
+A ``||loops:repeat||`` block combined with an ``||logic:if||`` block can efficiently solve a large problem even when there isn't a pattern.
+
+Add code to the **"run"** chat command to make the ``||agent:agent destroy||`` only ``||logic:if||`` the  ``||agent:agent detects||`` a block.  The ``||loops:repeat||`` block is already set to repeat the correct number of times.
+
+#### ~ tutorialhint
+
+The ``||agent:agent detect||`` block returns *true* if there is a solid Minecraft block.  
+
+It returns *false* for items such as torches, levers, and buttons that the agent can walk through.
+
+### @showdialog
+
+Let's try the same code with a different scenario
+
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
+
+### Making choices
+
+For the next problem, make the agent break only the **Honey Blocks**, not the **Levers**.
+
+Despite the different blocks being used and their different arrangement, does this problem seem familiar?
+
+#### ~ tutorialhint
+
+The change from *Slime Blocks* to *Honey Blocks* and a different layout have no impact on the solution.
+
+A single solution with *if statements* can solve multiple problems with superficial differences.
+
+### Review
+
+``||logic:If||`` blocks make code flexible by using **conditions** to properly react to different situations.
+
+Flexible code with ``||logic:if||`` blocks can solve problems that look different but share the same general idea.
+
+The ``||logic:if/else||`` block will be covered in a future lesson.
 
 ```template
-player.onChat("cleanup", function () {
-    for (let index = 0; index < 4; index++) {
-        if (agent.detect(AgentDetection.Block, FORWARD)) {
-            agent.destroy(FORWARD)
-        }
-        agent.turn(LEFT_TURN)
+player.onChat("if", function () {
+    if (agent.detect(AgentDetection.Block, LEFT)) {
+        agent.destroy(LEFT)
+    }
+    if (agent.detect(AgentDetection.Block, RIGHT)) {
+        agent.destroy(RIGHT)
     }
 })
 player.onChat("run", function () {
-    for (let index = 0; index < 10; index++) {
-    	
+	for (let index = 0; index < 25; index++) {
+
     }
 })
+
 ```
 
 ```ghost
