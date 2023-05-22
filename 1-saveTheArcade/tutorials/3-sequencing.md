@@ -14,13 +14,15 @@ Event blocks can hold multiple statement blocks to run a sequence of actions.
 
 ### Agent place
 
-Before the agent can place a block, it needs to have a block in its inventory to place.
+Sometimes multiple statement blocks are needed to complete a task.  For example, it is necessary to put a Minecraft block in the agent's inventory before the agent can place it.
 
-The ``||agent:agent set block or item||`` block in the provided code will put one **Block of Redstone** in the agent's first inventory slot.
+Send the "place" command in chat to make the ``||agent:agent place||`` a **Block of Redstone** forward.  
 
 #### ~ tutorialhint
 
-Send the "place" command in chat to run the code to make the ``||agent:agent place||`` a Block of Redstone forward.
+The ``||agent:agent set block or item||`` block in the provided code will put one *Block of Redstone* in the agent's first inventory slot.
+
+The agent places blocks from its first inventory slot by default.
 
 ### Multiple steps @showdialog
 
@@ -30,7 +32,7 @@ Let's put multiple blocks in a single chat command to complete a task that requi
 
 ### Multiple steps
 
-Add a sequence of ``||agent:agent||`` blocks to solve the challenge.  Remember, the directions in the drop-down menu are interpreted from the agent's point of view.
+Add a sequence of ``||agent:agent||`` blocks to the **"run"** chat command to complete the task.
 
 Navigate the agent to the **dirt block**, destroy it, place a **Block of Redstone**, then interact with the lever to turn it on.
 
@@ -38,14 +40,11 @@ Navigate the agent to the **dirt block**, destroy it, place a **Block of Redston
 
 Try using an ``||agent:agent turn||`` block to change which direction the agent is facing.
 
-Use the Search bar to quickly find a Minecraft block in the drop-down menu.
+Use the Search bar to quickly find a specific Minecraft block in the drop-down menu.
 
 ### Review
 
-The ``||agent:agent set block or item||`` puts something in the agent's inventory, and ``||agent:agent place||`` makes the agent place a block or item from its inventory (default slot = 1).
-
-Code is a sequence of steps to be executed in order.  
-
+When working with multiple statement blocks, it is important to put them in the proper order.  
 
 ```template
 player.onChat("place", function () {
