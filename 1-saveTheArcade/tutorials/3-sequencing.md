@@ -14,7 +14,7 @@ Event blocks can hold multiple statement blocks to run a sequence of actions.
 
 ### Agent place
 
-Before making the agent place a block, we need to put a block in the agent's inventory.
+Before the agent can place a block, it needs to have a block in its inventory to place.
 
 The ``||agent:agent set block or item||`` block in the provided code will put one **Block of Redstone** in the agent's first inventory slot.
 
@@ -32,7 +32,7 @@ Let's put multiple blocks in a single chat command to complete a task that requi
 
 Add a sequence of ``||agent:agent||`` blocks to solve the challenge.  Remember, the directions in the drop-down menu are interpreted from the agent's point of view.
 
-Navigate the agent to the **dirt block**, destroy it, and place a **Block of Redstone**.
+Navigate the agent to the **dirt block**, destroy it, place a **Block of Redstone**, then interact with the lever to turn it on.
 
 #### ~ tutorialhint
 
@@ -44,7 +44,7 @@ Use the Search bar to quickly find a Minecraft block in the drop-down menu.
 
 The ``||agent:agent set block or item||`` puts something in the agent's inventory, and ``||agent:agent place||`` makes the agent place a block or item from its inventory (default slot = 1).
 
-Code is a sequence of steps being executed in order.  
+Code is a sequence of steps to be executed in order.  
 
 
 ```template
