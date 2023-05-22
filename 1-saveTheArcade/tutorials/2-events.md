@@ -6,23 +6,59 @@
 
 ## First Activity
 
-###  @showdialog
+### Agent move @showdialog
 
-Let's use "on chat command" event blocks to run different commands.
+Let's use an "on chat command" event block to move the agent.
 
 ![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
 
-### Adding blocks to the workspace
+### Agent move
 
-Alter the code in the "move" chat command to move the agent **3** spaces forward.
+To run the code provided in the **"move"** chat command, first press the Play button to close Code Builder. 
 
-Drag an ``||agent:agent interact||`` block from the Agent category into the "interact" chat command and set the direction to **back**.
-
-Drag an ``||player:on chat command||`` block from the Player category into the workspace, name it "destroy" and add an ``||agent:agent destroy||`` block with the direction set to **right**.
+Then press **T** to open the Minecraft chat window.  In the chat window, send the message **"move"**.
 
 #### ~ tutorialhint
 
-Press the Play button to close the Code Builder window, then press T to open the chat.  Send a command name to run the code for that command.
+Click the Next button to move on to the next coding task.
+
+### Agent interact @showdialog
+
+Let's use another "on chat command" event block to make the agent interact with a lever.
+
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
+
+### Agent interact
+
+Click the ``||agent:agent||`` button to open the ``||agent:agent||`` category.
+
+Drag an ``||agent:agent interact||`` block into the **"interact"** chat command and set the direction in the drop-down menu to **back**.
+
+#### ~ tutorialhint
+
+Run your code by sending the command "interact" in the Minecraft chat window.
+
+### Agent destroy @showdialog
+
+Let's use one more "on chat command" event block to make the agent destroy a block.
+
+![](https://raw.githubusercontent.com/xtopheryoungs/mceduCodeQuest/main/1-saveTheArcade/images/placeholder.gif)
+
+### Agent destroy
+
+Drag a new ``||player:on chat command||`` block from the Player category into the workspace, and name it **"destroy"**.
+
+Add an ``||agent:agent destroy||`` block to the **"destroy"** chat command with the direction set to **right**.
+
+#### ~ tutorialhint
+
+Chat commands need to have different names.  Any chat command with a duplicate name will be disabled.
+
+### Review
+
+Chat commands allow you to control when to run your code. 
+
+The agent can move, interact, and destroy in six different directions.
 
 ```template
 player.onChat("interact", function () {
