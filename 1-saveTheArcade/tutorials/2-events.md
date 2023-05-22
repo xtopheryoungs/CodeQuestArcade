@@ -20,6 +20,8 @@ Then press **T** to open the Minecraft chat window.  In the chat window, send th
 
 #### ~ tutorialhint
 
+The direction in the drop-down menu is relative to the agent's point of view.
+
 Click the Next button to move on to the next coding task.
 
 ### Agent interact @showdialog
@@ -36,6 +38,8 @@ Drag an ``||agent:agent interact||`` block into the **"interact"** chat command 
 
 #### ~ tutorialhint
 
+The direction *back* refers to the area behind the agent.
+
 Run your code by sending the command "interact" in the Minecraft chat window.
 
 ### Agent destroy @showdialog
@@ -48,9 +52,11 @@ Let's use one more "on chat command" event block to make the agent destroy a blo
 
 Drag a new ``||player:on chat command||`` block from the Player category into the workspace, and name it **"destroy"**.
 
-Add an ``||agent:agent destroy||`` block to the **"destroy"** chat command with the direction set to **right**.
+Add an ``||agent:agent destroy||`` block to the **"destroy"** chat command with the direction set to **right**, then run your code.
 
 #### ~ tutorialhint
+
+The direction *right* refer's to the agent's right, not the player's right.
 
 Chat commands need to have different names.  Any chat command with a duplicate name will be disabled.
 
